@@ -6,7 +6,7 @@ spring:
     name: notification-service
 
   datasource:
-    url: jdbc:mysql://userdb:3306/orderdb?serverTimezone=UTC&useUnicode=true&characterEncoding=utf8&useSSL=false&zeroDateTimeBehavior=CONVERT_TO_NULL
+    url: jdbc:mysql://userdb:3306/notification?serverTimezone=UTC&useUnicode=true&characterEncoding=utf8&useSSL=false&zeroDateTimeBehavior=CONVERT_TO_NULL
     username: root
     password: 1234
     driver-class-name: com.mysql.cj.jdbc.Driver
