@@ -13,6 +13,7 @@ pipeline {
     stage('Build Docker') {
       steps {
         sh 'ls'
+        sh 'cd build && ls'
         script {
           backend_user = docker.build("goalgoru/backend-notification")
         }
