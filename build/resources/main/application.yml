@@ -6,14 +6,14 @@ spring:
     name: notification-service
 
   datasource:
-    url: jdbc:mysql://userdb:3306/orderdb?serverTimezone=UTC&useUnicode=true&characterEncoding=utf8&useSSL=false&zeroDateTimeBehavior=CONVERT_TO_NULL
-    username: root
-    password: 1234
-    driver-class-name: com.mysql.cj.jdbc.Driver
-#    url: jdbc:h2:tcp://localhost/~/foodtruck
-#    username: sa
-#    password:
-#    driver-class-name: org.h2.Driver
+#    url: jdbc:mysql://userdb:3306/notification?serverTimezone=UTC&useUnicode=true&characterEncoding=utf8&useSSL=false&zeroDateTimeBehavior=CONVERT_TO_NULL
+#    username: root
+#    password: 1234
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:h2:tcp://localhost/~/foodtruck
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
 
   jpa:
     hibernate:
@@ -45,5 +45,5 @@ management:
         include: beans, health, busrefresh, refresh
 
 kafka:
-  host: 10.10.10.203
+  host: 127.0.0.1
   port: 9092

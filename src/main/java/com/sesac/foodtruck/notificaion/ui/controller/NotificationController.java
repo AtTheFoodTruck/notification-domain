@@ -20,6 +20,12 @@ public class NotificationController {
     private final NotificationService notificationService;
     private final Response response;
 
+    /**
+     * 회원 알림 목록 조회
+     * @author jaemin
+     * @version 1.0.0
+     * 작성일 2022/06/16
+    **/
     @GetMapping("/notifications/{user_Id}")
     public ResponseEntity<?> getNotificationByUserId(@PathVariable("user_Id") Long userId) {
         List<FindNotificationDto> notifications = notificationService.findNotificationByUserId(userId);
